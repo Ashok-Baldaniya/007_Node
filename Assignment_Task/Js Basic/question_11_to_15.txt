@@ -1,0 +1,25 @@
+Q11. What are all the looping structures in JavaScript? 
+     There are four types of loops in JavaScript.
+     ->for loop
+     ->while loop
+     ->do-while loop
+     ->for-in loop
+
+
+Q12.How can you convert the string of any base to an integer in JavaScript?
+    In JavaScript parseInt() function (or a method) is used to convert the passed in 
+string parameter or value to an integer value itself. 
+
+
+Q13.What is the function of the delete operator?
+    The delete operator removes a given property from an object. On successful deletion,
+it will return true , else false will be returned.
+
+
+Q14. What are all the types of Pop up boxes available in JavaScript? 
+     JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.
+
+
+Q15.What is the use of Void (0)? 
+    Using javascript: , you can run code that does not change the current page. This,used
+with void(0) means, do nothing - don't reload, don't navigate, do not run any code.

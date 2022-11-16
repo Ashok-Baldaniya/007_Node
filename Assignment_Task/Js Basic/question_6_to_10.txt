@@ -20,4 +20,12 @@ and have same value, otherwise, it returns false.
 
 
 Q9. How can the style/class of an element be changed? 
-    
+    getElementById() method is used to return the element in the document with the “id” 
+attribute and the “className” attribute can be used to change/append the class of the 
+element.
+
+
+Q10. How to read and write a file using JavaScript? 
+     readFile() and rs. writeFile() methods are used to read and write of a file using 
+javascript. The file is read using the fs. readFile() function, which is an inbuilt 
+method.
