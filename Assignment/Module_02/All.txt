@@ -1,0 +1,41 @@
+Q1.What is Node.js? Where can you use it?
+   Node.js is an open-source, Javascript runtime environment that lets
+you effortlessly develop scalable web application.
+   Almost everyone in the industry, including the big companies like 
+Netflix, Uber, LinkedIn.
+
+
+Q2.Explain callback in Node.js
+   Callback is an asynchronous equivalent for a function. It is called
+at the completion of each task.Using Callback concept, Node.js can 
+process a large number of requests without waiting for any function to
+return the result which makes Node.js highly scalable.
+
+
+Q3.What are the advantages of using promises instead of callbacks?
+   -> They are composable, unlike callbacks, therefore we can avoid 
+      callback hells.
+   -> You can easily execute code with Promise.all when multiple 
+      responses are returned.
+   -> You can wait for only one result from concurrent pending promises
+      with the help of Promise.race
+   -> You can write asynchronous code in a synchronous manner if you
+      use it in conjunction with async / await.
+
+
+Q4.What is NPM?
+   NPM stands for Node Package Manager and is one of the multiple 
+package managers (others include Yarn, Bower, etc.) available for the 
+Javascript programming language. Furthermore, it’s the default package
+manager for Node.js.
+
+
+Q5.What are the modules in Node.js? Explain
+   There are three main types of modules in node.js:
+    -> Local Modules(Own Modules)
+    -> Core Modules
+    -> Third Party Modules
+
+
+Q6.Create TODO app using FS module with yargs (command line arguments).
+   
