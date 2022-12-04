@@ -9,12 +9,16 @@ axios.get(url).then(result=>{
    const pressure=result.data.main.pressure
    const humidity=result.data.main.humidity
    const city=result.data.name
+   const latitude=result.data.coord.lat
+   const longitude=result.data.coord.lon
 
    console.log(`
-   City:${city},
-   Temp:${temp},
-   Pressure:${pressure},
+   City:${city}
+   Temp:${temp}
+   Pressure:${pressure}
    Humidity:${humidity}
+   Latitude:${latitude}
+   Longitude:${longitude}
    `);
 }).catch(err=>{
     console.log(err);
