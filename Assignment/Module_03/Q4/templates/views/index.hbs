@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css">
+</head>
+<body onload="getcountry()">
+    <div>
+        <div class="form-group">
+            <label for="country">Country</label>
+            <select name="country" id="country" class="form-control" onchange="getstate(value)">
+                <option value="">---Select Country---</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="state">State</label>
+            <select name="state" id="state" class="form-control" onchange="getcity(value)">
+                <option value="">---Select State---</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="city">City</label>
+            <select name="city" id="city" class="form-control" onchange="getweather(value)">
+                <option value="">---Select City---</option>
+            </select>
+        </div>
+    </div>
+    <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+    <div class="row d-flex justify-content-center px-3">
+        <div class="card">
+            <h2 class="ml-auto mr-4 mt-3 mb-0"  id="loc">loading..</h2>
+            <span class="ml-auto mr-4 large-font" id="temp"></span>
+            <span>&#8451;</span>
+            <p class="time-font mb-0 ml-4 mt-auto" > Pressure : <strong id="pre"></strong> </p>
+            <p class="ml-4 mb-4"> Humidity : <strong id="humi"></strong></p>
+        </div>
+    </div>
+</div>
+<script src="js/demo.js"></script>
+
+</body>
+</html>
