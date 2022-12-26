@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .zone{
+            background-color: rgba(0, 0, 0, 0.682);
+            color: white;
+            font-size: 30px;
+            width: 400px;
+        }
+        #zone{
+            background-color: rgba(0, 0, 0, 0.682);
+            color: white;
+            font-size: 30px;
+            width: 400px;
+        }
+        .tz,.ok,.dt{
+            display: inline-block;
+            font-size: 30px;
+            background-color: bisque;
+            width: 400px;
+        }
+    </style>
 </head>
+
+
 <body onload="getzone()">
-    
-    <div>
-        <select name="time" id="time" onchange="gettime(value)">
-        <option value="0">---select zone---</option>
-    </select>
 
-    <div>
-        <h3 id="time">Loading...</h3>
-    </div>
+        <div class="zone">
+            <select name="zone" id="zone" onchange="gettime(value)">
+                <option value=""></option>
+            </select>
+        </div>
+<br><br>
+        <div class="tz">
+            <label for="">TimeZone:</label>
+            <span id="tz" name="tz">......</span>
+        </div>
 
-    <script src="demo.js"></script>
+        <div class="ok">
+            <label for="">Time:</label>
+            <span id="ok" name="ok">......</span>
+        </div>
 
-    </div>
+        <div class="dt">
+            <label for="">Date:</label>
+            <span id="dt" name="dt">......</span>
+        </div>
 
-    <div class="clock">
-        <div class="hourHand"></div>
-        <div class="minuteHand"></div>
-        <div class="secondHand"></div>
-        <div class="center"></div>
-        <div class="time"></div>
-    </div>
-
-
-
+    <script src="js/demo.js"></script>
 
 </body>
-</html>
 
+</html>
