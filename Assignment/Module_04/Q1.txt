@@ -1,0 +1,2 @@
+-> What is MongoDB.
+    MongoDB is an open source NoSQL database. As a non-relational database, it can process structured, semi-structured, and unstructured data. It uses a non-relational, document-oriented data model and a non-structured query language.

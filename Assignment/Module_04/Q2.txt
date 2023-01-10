@@ -1,0 +1,3 @@
+-> What is difference between mongo DB and SQL
+
+   SQL databases are used to store structured data while NoSQL databases like MongoDB are used to save unstructured data. MongoDB is used to save unstructured data in JSON format. MongoDB does not support advanced analytics and joins like SQL databases support.
