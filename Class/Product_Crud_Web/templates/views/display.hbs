@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    {{!-- {{data}} --}}
+    <br><br>
+    <h4><a href="gohome">Goto Add Product</a></h4>
+
+    <h1 align="center">Product List</h1>
+    <table class="table">
+        {{!-- <th>Id</th> --}}
+        <th>Name</th>
+        <th>Price</th>
+        <th>Image</th>
+        <th colspan="2">Action</th>
+
+        {{#each data}}
+        <tr>
+
+            <td>{{this.productname}}</td>
+            <td>{{this.price}}</td>
+            <td><img src="profile/{{this.img}}" alt="" width="50px" height="50px"></td>
+            <td><a href="delete?did={{this._id}}" class="btn btn-danger">Delete</a></td>
+            <td><a href="update?uid={{this._id}}" class="btn btn-primary">Edit</a></td>
+
+        </tr>
+        {{/each}}
+    </table>
+
+
+
+</body>
+
+</html>
