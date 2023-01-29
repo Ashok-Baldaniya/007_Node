@@ -1,3 +1,25 @@
 *********************** Abstact for ecommerce website ******************************
 
-An ecommerce website is an online platform that allows businesses and individuals to sell products or services directly to consumers. These websites typically feature a user-friendly interface, easy navigation, and the ability to purchase items through secure online payment methods. Some popular features of ecommerce websites include product listings, shopping carts, customer reviews, and the ability to track orders and shipments. Additionally, many ecommerce websites offer personalized recommendations, discounts, and promotions to customers. Ecommerce websites have become increasingly popular in recent years, as they provide a convenient and efficient way for businesses to reach a global customer base.
+An ecommerce website is an online platform that allows businesses
+and individuals to sell products or services directly to
+consumers. These websites typically feature a user-friendly
+interface, easy navigation, and the ability to purchase items
+through secure online payment methods. Some popular features of
+ecommerce websites include product listings, shopping carts,
+customer reviews, and the ability to track orders and shipments.
+Additionally, many ecommerce websites offer personalized
+recommendations, discounts, and promotions to customers.
+Ecommerce websites have become increasingly popular in recent
+years, as they provide a convenient and efficient way for
+businesses to reach a global customer base.
+
+The main advantage of e-commerce over traditional commerce is the
+user can browse online shops, compare prices and order
+merchandise sitting at home on their PC.
+
+For increasing the use of e-commerce in developing countries the
+B2B e-commerce is implemented for improving access to global
+markets for firms in developing countries. For a developing
+country advancement in the field of e-commerce is essential. The
+research strategy shows the importance of the e-commerce in
+developing countries for business applications.
