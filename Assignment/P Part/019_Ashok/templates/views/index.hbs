@@ -34,7 +34,9 @@
         $(document).ready(function () { })
 
         function addtoCart(pid) {
-            $.get
+            $.get("addtocart", { pid }, function (rt) {
+                alert(rt)
+            })
         }
 
     </script>
@@ -99,7 +101,7 @@
                     <i class="fas fa-heart text-primary"></i>
                     <span class="badge">0</span>
                 </a>
-                <a href="" class="btn border">
+                <a href="cart" class="btn border">
                     <i class="fas fa-shopping-cart text-primary"></i>
                     <span class="badge">0</span>
                 </a>
@@ -320,8 +322,8 @@
                     <div class="card-footer d-flex justify-content-between bg-light border">
                         <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View
                             Detail</a>
-                        <a href="addtocart" class="btn btn-sm text-dark p-0"><i
-                                class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                        <i class="fas fa-shopping-cart text-primary mr-1" onclick="addtoCart('{{this._id}}')">Add
+                            To Cart</i>
                     </div>
                 </div>
             </div>

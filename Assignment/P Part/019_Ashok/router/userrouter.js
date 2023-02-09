@@ -5,6 +5,7 @@ const bcrypt = require("bcryptjs")
 const jwt = require("jsonwebtoken")
 const auth = require("../middleware/auth")
 const Product = require("../model/Product")
+const Cart = require("../model/Cart")
 
 router.get("/", async (req, resp) => {
     try {
@@ -50,17 +51,41 @@ router.get("/findByCat", async (req, resp) => {
     }
 })
 
-router.get("/cart", (req, resp) => {
-    resp.render("cart")
+router.get("/cart", auth, async (req, resp) => {
+    const uid = req.user._id
+    try {
+        const cartdata = await Cart.aggregate([{ $match: { uid: uid } }, { $lookup: { from: "products", localField: "pid", foreignField: "_id", as: "products" } }])
+        resp.render("cart", { cartd: cartdata })
+    } catch (error) {
+        console.log(error);
+    }
 })
 
+router.get("/deletecart", auth, async (req, resp) => {
+    const _id = req.query.did
 
-router.get("/addtocart", async (req, resp) => {
-    const id = req.query._id
     try {
-        
-    } catch (error) {
+        const data = await Cart.findByIdAndDelete(_id)
 
+        resp.redirect("cart")
+    } catch (error) {
+        console.log(error);
+    }
+})
+
+router.get("/addtocart", auth, async (req, resp) => {
+    const pid = req.query.pid
+    const uid = req.user._id
+
+    try {
+        const cart = new Cart({
+            pid: pid,
+            uid: uid
+        })
+        await cart.save()
+        resp.send("product added into Cart")
+    } catch (error) {
+        console.log(error);
     }
 })
 
